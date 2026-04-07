@@ -1,0 +1,305 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоДрайв 2026 | Будущее мобильности</title>
+    <style>
+        /* Сброс стилей */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0d1117; /* Темный фон */
+            color: #e0e0e0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        header.scrolled {
+            background-color: #1a1a1a;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Главный экран (Hero Section) */
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1920x800/121212/FFFFFF/png?text=Future+Car+Concept');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: white;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 35px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+             background-color: #45a049;
+             transform: translateY(-5px);
+         }
+
+        /* Секции контента */
+        section {
+           padding: 60px 20px;
+           max-width: 1200px;
+           margin: auto;
+           text-align: center;
+       }
+
+       section h2 {
+           font-size: 36px;
+           margin-bottom: 30px;
+           color: #4CAF50;
+       }
+
+       .features-grid {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+           gap: 30px;
+           margin-top: 40px;
+       }
+
+       .feature-card {
+           background-color: rgba(255, 255, 255, 0.1);
+           padding: 30px;
+           border-radius: 15px;
+           transition: transform 0.3s, background-color 0.3s;
+       }
+
+       .feature-card h3 {
+           margin-bottom: 15px;
+           color: #eaeaea;
+       }
+
+       .feature-card p {
+           font-size: 16px;
+       }
+
+       .feature-card img {
+           max-width: 100%;
+           border-radius: 10px;
+       }
+
+       .feature-card:nth-child(odd) {
+           background-color: rgba(255, 255, 255, 0.15);
+       }
+
+       .feature-card:nth-child(even) {
+           background-color: rgba(255, 255, 255, 0.1);
+       }
+
+       .feature-card:nth-child(odd):hover,
+       .feature-card:nth-child(even):hover {
+           transform: translateY(-10px);
+           background-color: rgba(255, 255, 255, 0.2);
+       }
+
+       /* Подвал */
+       footer {
+           background-color: #1a1a1a;
+           color: #aaa;
+           text-align: center;
+           padding: 30px 20px;
+           margin-top: auto; /* Чтобы подвал всегда был внизу */
+       }
+
+       footer p {
+          margin-bottom: 15px;
+      }
+
+      footer a {
+          color: #4CAF50;
+          text-decoration: none;
+      }
+
+      /* Адаптивность для мобильных устройств */
+      max-width: 768px {
+          nav ul {
+              flex-direction: column;
+              gap: 15px;
+          }
+          .hero h1 {
+              font-size: 36px;
+          }
+          .hero p {
+              font-size: 18px;
+          }
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header id="main-header">
+        <div class="container">
+             <div class="logo">АвтоДрайв</div>
+             <nav>
+                 <ul>
+                     <li><a href="#about">О нас</a></li>
+                     <li><a href="#models">Модели</a></li>
+                     <li><a href="#tech">Технологии</a></li>
+                     <li><a href="#contact">Контакты</a></li>
+                 </ul>
+             </nav>
+         </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+         <div class="container">
+             <h1>АвтоДрайв | Мобильность будущего</h1>
+             <p>Откройте для себя автомобили нового поколения уже в <span style="color:#4CAF50;">2026 году</span></p>
+             <a href="#models" class="cta-btn">Выбрать модель</a>
+         </div>
+    </section>
+
+    <!-- О компании -->
+    <section id="about" class="about">
+         <div class="container">
+             <h2>Наша философия</h2>
+             <p>Мы создаем не просто автомобили — мы создаем экосистему передвижения. В АвтоДрайв мы объединяем искусственный интеллект, экологичные материалы и дизайн будущего для вашего комфорта и безопасности.</p>
+         </div>
+    </section>
+
+    <!-- Модели автомобилей -->
+    <section id="models" class="models">
+         <div class="container">
+             <h2>Линейка моделей АвтоДрайв (2026)</h2>
+             <div class="features-grid">
+                 <!-- Карточка модели -->
+                 <div class="feature-card">
+                     <img src="https://placehold.co/360x240/333/fff/png?text=Model+A" alt="Модель A">
+                     <h3>АвтоДрайв Aero</h3>
+                     <p>Электромобиль премиум-класса с автономным управлением и запасом хода до 800 км.</p>
+                 </div>
+                 <div class="feature-card">
+                     <img src="https://placehold.co/360x240/333/fff/png?text=Model+B" alt="Модель B">
+                     <h3>АвтоДрайв Urban</h3>
+                     <p>Компактный городской кроссовер с гибридным двигателем и системой умной парковки.</p>
+                 </div>
+                 <div class="feature-card">
+                     <img src="https://placehold.co/360x240/333/fff/png?text=Model+C" alt="Модель C">
+                     <h3>АвтоДрайв Sport</h3>
+                     <p>Спортивный купе с динамическим управлением и разгоном до 100 км/ч за 3.2 секунды.</p>
+                 </div>
+             </div>
+         </div>
+    </section>
+
+    <!-- Технологии -->
+    <section id="tech" class="tech">
+         <div class="container">
+             <h2>Технологии будущего сегодня</h2>
+             <div class="features-grid">
+                 <div class="feature-card">
+                     <img src="https://placehold.co/360x240/333/fff/png?text=Tech+AI" alt="AI">
+                     <h3>Искусственный интеллект</h3>
+                     <p>Ваш личный ассистент в пути. Анализирует трафик и ваши предпочтения.</p>
+                 </div>
+                 <div class="feature-card">
+                     <img src="https://placehold.co/360x240/333/fff/png?text=Tech+Eco" alt="Eco">
+                     <h3>Экологичность</h3>
+                     <p>Использование переработанных материалов и нулевой выброс CO₂.</p>
+                 </div>
+                 <div class="feature-card">
+                     <img src="https://placehold.co/360x240/333/fff/png?text=Tech+Safety" alt="Safety">
+                     <h3>Безопасность</h3>
+                     <p>Система предотвращения столкновений и мониторинг состояния водителя.</p>
+                 </div>
+             </div>
+         </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+         <div class="container">
+             <h2>Свяжитесь с нами</h2>
+             <p>Готовы сделать шаг в будущее? Оставьте заявку на тест-драйв или консультацию.</p>
+             <form style="max-width: 600px; margin-top: 40px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 15px;">
+                 <input type="text" placeholder="Ваше имя" required style="padding:15px; border-radius:8px; border:none; background:#2a2a2e; color:#fff; outline:none;">
+                 <input type="email" placeholder="Ваш Email" required style="padding:15px; border-radius:8px; border:none; background:#2a2a2e; color:#fff; outline:none;">
+                 <textarea placeholder="Ваше сообщение" rows="4" required style="padding:15px; border-radius:8px; border:none; background:#2a2a2e; color:#fff; outline:none;"></textarea>
+                 <button type="submit" style="
+                    padding:15px; 
+                    border-radius:8px; 
+                    border:none; 
+                    background:#4CAF50; 
+                    color:#fff; 
+                    font-size:18px; 
+                    cursor:pointer; 
+                    transition:.3s;">Отправить запрос</button>
+             </form>
+         </div>
+    </section>
+
+     <!-- Скрипт для фиксации шапки при скролле -->
+     <script>
+         const header = document.getElementById('main-header');
+         window.addEventListener('scroll', () => {
+             if (window.scrollY > 50) {
+                 header.classList.add('scrolled');
+             } else {
+                 header.classList.remove('scrolled');
+             }
+         });
+     </script>
+
+</body>
+</html>
