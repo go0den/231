@@ -3,7 +3,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АвтоДрайв 2026 | Будущее мобильности</title>
     <style>
-        /* Сброс стилей */
         * {
             margin: 0;
             padding: 0;
@@ -12,13 +11,12 @@
         }
 
         body {
-            background-color: #0d1117; /* Темный фон */
+            background-color: #0d1117;
             color: #e0e0e0;
             line-height: 1.6;
             scroll-behavior: smooth;
         }
 
-        /* Шапка сайта */
         header {
             background-color: rgba(0, 0, 0, 0.8);
             padding: 20px;
@@ -56,7 +54,6 @@
             color: #4CAF50;
         }
 
-        /* Главный экран (Hero Section) */
         .hero {
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1920x800/121212/FFFFFF/png?text=Future+Car+Concept');
             background-size: cover;
@@ -151,25 +148,7 @@
            background-color: rgba(255, 255, 255, 0.2);
        }
 
-       /* Подвал */
-       footer {
-           background-color: #1a1a1a;
-           color: #aaa;
-           text-align: center;
-           padding: 30px 20px;
-           margin-top: auto; /* Чтобы подвал всегда был внизу */
-       }
 
-       footer p {
-          margin-bottom: 15px;
-      }
-
-      footer a {
-          color: #4CAF50;
-          text-decoration: none;
-      }
-
-      /* Адаптивность для мобильных устройств */
       max-width: 768px {
           nav ul {
               flex-direction: column;
@@ -201,7 +180,6 @@
          </div>
     </header>
 
-    <!-- Главный экран -->
     <section class="hero">
          <div class="container">
              <h1>АвтоДрайв | Мобильность будущего</h1>
@@ -218,7 +196,6 @@
          </div>
     </section>
 
-    <!-- Модели автомобилей -->
     <section id="models" class="models">
          <div class="container">
              <h2>Линейка моделей АвтоДрайв (2026)</h2>
@@ -243,7 +220,6 @@
          </div>
     </section>
 
-    <!-- Технологии -->
     <section id="tech" class="tech">
          <div class="container">
              <h2>Технологии будущего сегодня</h2>
@@ -267,7 +243,6 @@
          </div>
     </section>
 
-    <!-- Контакты -->
     <section id="contact" class="contact">
          <div class="container">
              <h2>Свяжитесь с нами</h2>
@@ -289,7 +264,6 @@
          </div>
     </section>
 
-     <!-- Скрипт для фиксации шапки при скролле -->
      <script>
          const header = document.getElementById('main-header');
          window.addEventListener('scroll', () => {
